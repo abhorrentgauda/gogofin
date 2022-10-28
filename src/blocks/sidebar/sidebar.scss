@@ -1,0 +1,162 @@
+.sidebar {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  background-color: $color-white;
+  position: fixed;
+  z-index: 5;
+
+  left: 0;
+
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+
+  @media (min-width: $screen-m) {
+
+    width: 320px;
+    box-shadow: $shadow-sidebar;
+  }
+
+  @media (min-width: $screen-l) {
+
+    box-shadow: none;
+    display: block;
+    float: left;
+    position: relative;
+  }
+
+  &__container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &__button {
+
+    margin-right: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: $color-icons;
+    transition: 0.3s;
+    cursor: pointer;
+
+    @media (min-width: $screen-l) {
+
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+
+    &:last-child {
+
+      margin-right: 0;
+    }
+
+    &:hover {
+
+      opacity: 0.85;
+    }
+
+    &--menu {
+
+      @media (min-width: $screen-l) {
+
+        display: none;
+      }
+    }
+  }
+
+  &__logo {
+
+    padding: 0;
+    margin-right: auto;
+  }
+
+  &__nav {
+
+    margin-bottom: auto;
+  }
+
+  &__menu {
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 8px;
+    margin: 0;
+
+    list-style: none;
+    font-size: $font-size;
+    line-height: $line_height;
+    letter-spacing: $letter-spacing;
+
+    color: $color-text;
+
+    @media (min-width: $screen-m) {
+
+      padding-top: 32px;
+    }
+  }
+
+  &__item {
+
+    margin-bottom: 24px;
+
+    &:last-child {
+
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-m) {
+
+      margin-bottom: 32px;
+    }
+
+    &--current {
+
+      color: $color-text--lighter;
+
+      &::before {
+
+        content: url("data:image/svg+xml,%3Csvg width='4' height='40' viewBox='0 0 4 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z' fill='%2341F6D7'/%3E%3C/svg%3E%0A");
+        position: absolute;
+        transform: translateX(-16px) translateY(-8px);
+
+        @media (min-width: $screen-m) {
+
+          transform: translateX(-24px) translateY(-8px);
+        }
+
+        @media (min-width: $screen-l) {
+
+          transform: translateX(-32px) translateY(-8px);
+        }
+      }
+    }
+  }
+
+  &__link {
+
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+
+      color: $color-text--lighter;
+    }
+  }
+}

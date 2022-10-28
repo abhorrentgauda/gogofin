@@ -1,0 +1,75 @@
+.article {
+
+  display: flex;
+  flex-direction: column;
+  background-color: $color-background;
+
+  &__title {
+
+    margin: 0;
+
+    &::before {
+
+      content: url("data:image/svg+xml,%3Csvg width='4' height='40' viewBox='0 0 4 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z' fill='%2341F6D7'/%3E%3C/svg%3E%0A");
+      position: absolute;
+      transform: translateX(-16px) translateY(-4px);
+
+      @media (min-width: $screen-m) {
+
+        transform: translateX(-24px) translateY(-4px);
+      }
+
+      @media (min-width: $screen-l) {
+
+        transform: translateX(-32px) translateY(-4px);
+      }
+    }
+  }
+
+  &__labels {
+
+    display: flex;
+  }
+
+  &__label {
+
+    display: none;
+    transition: 0.3s;
+    cursor: pointer;
+
+    @media (min-width: $screen-l) {
+
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-right: 32px;
+
+      &:last-child {
+
+        margin: 0;
+      }
+    }
+
+    &:hover {
+
+      opacity: 0.85;
+    }
+  }
+
+  &__button {
+
+    margin-left: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: #FF3E79;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+
+      opacity: 0.85;
+    }
+  }
+}

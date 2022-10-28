@@ -1,0 +1,46 @@
+.swiper {
+
+  background-color: $color-background;
+  padding-top: 16px;
+
+  @media (min-width: $screen-m) {
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.swiper-pagination {
+
+  @media (min-width: $screen-m) {
+
+    display: none;
+  }
+
+  &--brands {
+
+    bottom: 20px !important;
+  }
+
+  &--tech {
+
+    bottom: 15px !important;
+  }
+
+  &--price {
+
+    bottom: 5px !important;
+  }
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+
+  background-color: $color-pagination--active
+}
+
+.swiper-pagination-bullet {
+
+  width: 12px;
+  height: 12px;
+  background-color: $color-pagination;
+}

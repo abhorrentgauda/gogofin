@@ -1,0 +1,27 @@
+@import 'variables.scss';
+@import 'normalize.scss';
+@import 'fonts.scss';
+@import '../../node_modules/swiper/swiper-bundle.min.css';
+@import 'general.scss';
+
+@import '../blocks/button/button.scss';
+@import '../blocks/header/header.scss';
+@import '../blocks/article/article.scss';
+@import '../blocks/article-header/article-header.scss';
+@import '../blocks/article-menu/article-menu.scss';
+@import '../blocks/section-post/section-post.scss';
+@import '../blocks/section-button/section-button.scss';
+@import '../blocks/section-title/section-title.scss';
+@import '../blocks/section-repair/section-repair.scss';
+@import '../blocks/section-brands/section-brands.scss';
+@import '../blocks/card-button/card-button.scss';
+@import '../blocks/section-tech/section-tech.scss';
+@import '../blocks/sidebar/sidebar.scss';
+@import '../blocks/sidebar-footer/sidebar-footer.scss';
+@import '../blocks/section-price/section-price.scss';
+@import '../blocks/section-additional/section-additional.scss';
+@import '../blocks/callback/callback.scss';
+@import '../blocks/feedback/feedback.scss';
+@import '../blocks/footer/footer.scss';
+
+@import 'swiper.scss';

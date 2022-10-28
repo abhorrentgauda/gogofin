@@ -1,0 +1,65 @@
+.footer {
+
+  border-top: 1px solid #D9FFF5;
+
+  &__container {
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    font-size: $font-size--text;
+    line-height: $line-height--xs;
+    color: $color-text--lighter;
+    text-align: center;
+
+    @media (min-width: $screen-m) {
+
+      flex-direction: row;
+      justify-content: space-between;
+      height: 85px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  &__credits {
+
+    margin-bottom: 16px;
+    margin-top: 0;
+
+    @media (min-width: $screen-m) {
+
+      width: 32%;
+      text-align: left;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  &__privacy-policy {
+
+    margin-bottom: 16px;
+    margin-top: 0;
+
+    @media (min-width: $screen-m) {
+
+      width: 36%;
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+
+  &__offer {
+
+    margin-bottom: 16px;
+    margin-top: 0;
+
+    @media (min-width: $screen-m) {
+
+      width: 32%;
+      text-align: right;
+      margin-bottom: 0;
+    }
+  }
+}

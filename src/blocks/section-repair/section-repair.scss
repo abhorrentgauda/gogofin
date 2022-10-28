@@ -1,0 +1,12 @@
+.section-repair {
+
+  display: flex;
+  box-sizing: border-box;
+  max-height: 160px;
+
+  @media (min-width: $screen-m) {
+
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+}
