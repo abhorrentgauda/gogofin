@@ -794,7 +794,8 @@ ul {
     .section-price__group--text:first-child {
       display: flex;
       flex-direction: column;
-      align-items: flex-start; }
+      align-items: flex-start;
+      height: 100%; }
       @media (min-width: 768px) {
         .section-price__group--text:first-child {
           flex-direction: row;
